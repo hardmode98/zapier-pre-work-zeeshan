@@ -56,7 +56,7 @@ curl http://localhost:3000/health
 
 | Command             | Description                                      |
 | ------------------- | ------------------------------------------------ |
-| `npm run dev`       | Run in watch mode via `tsx` (no build step)      |
+| `npm run dev`       | Run in watch mode via nodemon + `tsx` (no build step) |
 | `npm run build`     | Compile TypeScript to `dist/`                    |
 | `npm start`         | Run the compiled server from `dist/`             |
 | `npm test`          | Run the test suite once (Vitest)                 |

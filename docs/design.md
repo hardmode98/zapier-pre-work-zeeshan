@@ -13,9 +13,8 @@ src/
 ├── http/              # response envelope interfaces + ok()/fail() builders
 ├── errors/            # AppError + ValidationError / NotFoundError
 ├── middleware/        # asyncHandler, global error handler, custom 404
-├── types/             # shared domain constants (the status enum)
 ├── modules/
-│   └── deployments/   # model, zod schemas, service, controller, routes
+│   └── deployments/   # model, domain constants, zod schemas, service, controller, routes
 └── seed/              # mock deployment events + idempotent seeder
 tests/                 # Vitest unit + supertest API tests (in-memory MongoDB)
 docs/                  # design.md — architecture, API, decisions
