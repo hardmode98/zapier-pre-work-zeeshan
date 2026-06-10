@@ -78,8 +78,11 @@ unreachable, so don't bypass the zod parse.
   config module. No env setup is required to run anything.
 
 
-### Plans → Principal Engineer Review
-Every implementation plan **must** be reviewed by the `principal-reviewer` agent before coding begins. After creating a plan, spawn the agent to review it for edge cases, failure modes, security gaps, and scalability issues. Do not start implementation until the review is complete and any critical issues are addressed.
+### Plans → Principal Engineer Review (ask first)
+After creating an implementation plan, **ask the user** whether to have it reviewed by the `principal-reviewer` agent (use AskUserQuestion). If they say yes, spawn the agent to review the plan for edge cases, failure modes, security gaps, and scalability issues, and address any critical findings before coding. If they say no, proceed without the review. Do not run the review unprompted.
+
+### Lessons log (`lessons.md`)
+`lessons.md` at the repo root is the project's running lessons log, and a SessionStart hook injects it into context automatically. When the user says "note this down" / "note that" / "add to lessons", append a dated entry there (format is documented at the top of the file) — don't put the content anywhere else. Honor the lessons it contains when working.
 
 ## Bug Fixes & Errors
 

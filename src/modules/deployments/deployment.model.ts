@@ -17,7 +17,7 @@ const deploymentSchema = new Schema(
   {
     service: { type: String, required: true },
     status: { type: String, required: true, enum: [...DEPLOYMENT_STATUSES] },
-    duration: { type: Number, required: true, min: 0 },
+    duration: { type: Number, required: true, min: 0 }, // in seconds
     timestamp: { type: Date, required: true },
     commit_sha: { type: String, required: true },
   },
